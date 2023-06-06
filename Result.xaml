@@ -1,0 +1,24 @@
+﻿<Window x:Class="Wpf_pr8.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_pr8"
+        mc:Ignorable="d"
+        Title="Result" Height="330" Width="319">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/мр.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="tbArea" HorizontalAlignment="Left" Margin="134,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Background="#FFCCBBBB" Height="30"/>
+        <TextBox x:Name="tbBisector" HorizontalAlignment="Left" Margin="134,185,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Background="#FFCCBBBB" Height="30"/>
+        <TextBox x:Name="tbMedian" HorizontalAlignment="Left" Margin="134,133,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Background="#FFCCBBBB" Height="30"/>
+        <TextBox x:Name="tbPerimeter" HorizontalAlignment="Left" Margin="134,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="136" Background="#FFCCBBBB" Height="30"/>
+        <Label x:Name="labelPerimeter" Content="Perimeter" HorizontalAlignment="Left" Margin="23,31,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label x:Name="labelArea" Content="Area" HorizontalAlignment="Left" Margin="26,84,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label x:Name="labelMedian" Content="Median" HorizontalAlignment="Left" Margin="26,132,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16"/>
+        <Label x:Name="labelBisector" Content="Bisector" HorizontalAlignment="Left" Margin="23,184,0,0" VerticalAlignment="Top" Foreground="White" FontSize="16" RenderTransformOrigin="0.738,0.055"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Center" Margin="0,234,0,0" VerticalAlignment="Top" Height="35" Width="76" FontSize="16" Background="#FFDDDDDD" Click="btnExit_Click"/>
+
+    </Grid>
+</Window>

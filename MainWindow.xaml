@@ -1,0 +1,36 @@
+﻿<Window x:Class="Wpf_pr8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_pr8"
+        mc:Ignorable="d"
+        Title="Application" Height="400" Width="600" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/nh'eujkmybr.jpg" Stretch="UniformToFill" TileMode="None"/>
+        </Grid.Background>
+        <Button x:Name="btnInput" Content="Input" Margin="265,144,242,143" Background="#FFDAABAB" FontFamily="Algerian" FontSize="25" Click="btnInput_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="100"></Setter>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnResult" Content="Result" Margin="115,145,392,144" Background="#FFDAABAB" FontFamily="Algerian" FontSize="20" Click="btnResult_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="100"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button x:Name="btnExit" Content="Exit" Margin="413,145,94,144" Background="#FFA45252" FontFamily="Algerian" FontSize="25" Foreground="#FFFFE0E0" Click="btnExit_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="100"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Label Content="Menu" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Algerian" FontSize="48" Margin="245,10,0,0"/>
+    </Grid>
+</Window>
